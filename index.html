@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VG Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: inline;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/1.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+        }
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            display: inline-block;
+            background: rgb(75, 24, 12);
+            border-radius: 100px;
+            opacity: 90%;
+            border: 2px solid rgb(255, 249, 239);
+            height: 99px;
+
+        }
+
+        .left img {
+            width: 300px;
+            filter: invert(100%);
+            height: 98px;
+        }
+
+        .center {
+            background: rgb(75, 24, 12);
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            border: 2px solid rgb(255, 249, 239);
+            border-radius: 100px;
+            opacity: 90%;
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            border-radius: 100px;
+            opacity: 90%;
+            height: 99px;
+        }
+
+        .right img {
+            width: 88px;
+            height: 75px;
+            cursor: pointer;
+        }
+
+        .right img:hover {
+            width: 88px;
+            height: 75px;
+            cursor: pointer;
+            filter: grayscale(100%)
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: black;
+        }
+
+        .navbar li a {
+            color: rgb(255, 249, 239);
+            font-size: 22px;
+            text-decoration: none;
+            padding: 25px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: rgb(240, 211, 169);
+            text-decoration: underline;
+            padding: 25px;
+
+        }
+
+        .container {
+            background: rgb(250, 206, 206);
+            opacity: 85%;
+            display: inline-block;
+            border: 2px solid rgb(241, 152, 136);
+            width: 54%;
+            padding: 2px 28px;
+            border-radius: 22PX;
+            margin: 42px 70px;
+            color: blue;
+            font-size: 24px;
+            font-family: 'Open Sans', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .container h1 {
+            color: black;
+            font-size: 35px;
+        }
+
+        label {
+            color: blue;
+            font-size: bold;
+            font-family: 'Open Sans', sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 69px;
+            margin: 10px auto;
+        }
+
+        .btn {
+            margin: 32px 109px;
+            padding: 11px 38px;
+            background-color: rgb(255, 160, 51);
+            border-radius: 10px;
+            font-size: bold;
+        }
+
+        input {
+            background-color: rgb(229, 174, 243);
+            margin: 20px auto;
+            border-radius: 8px;
+            margin: 15px auto;
+        }
+        input :hover{
+            background-color: rgb(252, 241, 255);
+            border-radius: 8px;
+            margin: 15px auto;
+        }
+
+        button {
+            font-size: 40px;
+            background-color:red;
+            color: rgb(138, 125, 66);
+        }
+        
+        .btn:hover {
+            font-size: 40px;
+            background-color: rgb(187, 76, 32);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/2.png" alt="">
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="#">HOME</a></li>
+                <li> <a href="#">Training</a></li>
+                <li> <a href="#">Nutritions</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="https://www.facebook.com" target="_blank"><img src="img/f.png" alt=""></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="img/i.png" alt=""></a>
+            <a href="https://www.gmail.com" target="_blank"><img src="img/gm.png" alt=""></a>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the best Gym of Mumbai Now</h1>
+        <form action="#">
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Fullname">
+            </div>
+            <div>
+                <label for="number">Mobile No :</label>
+                <input type="text" name="number" id="number" placeholder="Enter your Mobile number">
+            </div>
+            <div>
+                <label for="address">Address :</label>
+                <input type="text" name="address" id="address" placeholder="Enter your Address">
+            </div>
+            <div>
+                <label for="male">Gender :</label>
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male">
+                <label for="male">Female</label>
+                <input type="radio" name="gender" id="male">
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
